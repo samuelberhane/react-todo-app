@@ -1,13 +1,106 @@
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: rgba(255, 254, 211, 0.836);
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+section {
+  padding: 2rem 1.2rem 1rem 1.2rem;
+  margin: 0 auto;
+  width: 400px;
+  max-width: 600px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.349);
+}
+
+form {
+  display: flex;
+}
+
+input {
+  flex-basis: 80%;
+  padding: 8px 1rem;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.submit-btn {
+  flex-basis: 20%;
+  padding: 8px 1rem;
+  font-size: 1.1rem;
+  background-color: rgb(16, 92, 85);
+  border: none;
+  color: #fff;
+}
+.item-list {
+  margin-top: 0.8rem;
+}
+
+.list {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(229, 207, 250, 0.349);
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  padding: 5px;
+  border: none;
+  background-color: rgba(101, 243, 101, 0.952);
+}
+
+.del-btn {
+  padding: 5px;
+  border: none;
+  background-color: rgba(245, 135, 221, 0.623);
+}
+
+.alert {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.msg {
+  text-align: center;
+  padding: 1px;
+  color: #fff;
+  width: 70%;
+}
+
+.msg.success {
+  background-color: rgba(83, 216, 101, 0.89);
+}
+
+.msg.danger {
+  background-color: rgb(252, 155, 130);
+}
+
+.clear-btn {
+  background-color: rgb(231, 65, 176);
+  border: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  color: #fff;
 }
